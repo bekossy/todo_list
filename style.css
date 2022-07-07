@@ -1,0 +1,80 @@
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+input[type="text"],
+input[type="text"]:focus {
+  border: none;
+  background: rgba(0, 0, 0, 0.2);
+  max-width: 400px;
+  display: block;
+  width: 100%;
+  padding: .375rem .75rem;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #212529;
+  background-clip: padding-box;
+  border: 1px solid #ced4da;
+  border-radius: .375rem;
+}
+
+.container{
+    max-width: 400px;
+    --bs-gutter-x: 1.5rem;
+    --bs-gutter-y: 0;
+    width: 100%;
+    padding-right: calc(var(--bs-gutter-x) * .5);
+    padding-left: calc(var(--bs-gutter-x) * .5);
+    margin-right: auto;
+    margin-left: auto;
+    font-family: sans-serif;
+}
+
+.header{
+    text-align: center;
+    margin: 10px 0 40px 0;
+}
+
+.header h1{
+    margin: 20px 0;
+    font-size: 35px;
+}
+
+.item{
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 10px;
+    border-radius: .275rem;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.add{
+    margin-top: 40px;
+    text-align: center;
+}
+
+.add label{
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.edit{
+    color: #0f0;
+    cursor: pointer;
+}
+
+.delete{
+    color: #f00;
+    cursor: pointer;
+}
+
+.filtered{
+    display: none !important;
+}
