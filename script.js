@@ -42,19 +42,6 @@ addTodo.addEventListener("submit", (e) => {
   }
 });
 
-// list.addEventListener("click", (e) => {
-//   const element = e.target.classList;
-
-//   if (element.contains("delete")) {
-//     e.target.parentElement.parentElement.remove();
-//   }
-
-//   if (element.contains("edit")) {
-//     const editText = e.target.parentElement.parentElement.textContent.trim();
-//     addTodo.add.value = editText;
-//   }
-// });
-
 search.addEventListener("keyup", () => {
   const term = search.value.toLowerCase().trim();
 
